@@ -1,0 +1,37 @@
+Part 1:
+
+https://www.ffiec.gov/nicpubweb/nicweb/HCSGreaterThan10B.aspx
+
+Screape data from this link using Python script, in a CSV file and do a exploratory analysis
+Tableau - geospatial analysis, histograms, pie-charts, heat maps, 
+
+Dash board - Top 10 Banks, bottom 10 banks, other analysis.
+
+3 years worth data - 
+One python file
+
+time series analysis for each oraganization
+trend charts, asset growth
+compare multiple organizations
+
+new variable in tableau - growth rate
+also show stacking and unstacking
+
+count chart per year
+
+Part 2:
+
+https://www.ffiec.gov/nicpubweb/content/BHCPRRPT/BHCPR_Peer.htm
+
+Info in PDF file:
+Goal: scrape this file and put it in csv file. - Find a tool
+focus on Pier 1:
+scrape this page and extract all PDFs and convert to csv format of each year.
+
+
+Part 3:
+https://www.ffiec.gov/nicpubweb/nicweb/Y15SnapShot.aspx
+
+
+
+
