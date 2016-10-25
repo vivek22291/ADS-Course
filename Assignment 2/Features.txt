@@ -1,0 +1,1 @@
+[encodedWeekday, encodedPeakHour, d["Temperature"], d["Dew_PointF"], d["Humidity"], d["Sea_Level_PressureIn"], d["VisibilityMPH"], encodedWindDirection, d["Wind_SpeedMPH"], encodedConditions, d["WindDirDegrees"]]

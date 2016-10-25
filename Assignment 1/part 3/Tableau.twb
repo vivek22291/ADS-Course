@@ -1,0 +1,2084 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10000.16.0917.1429                               -->
+<workbook source-build='10.0.1 (10000.16.0917.1429)' source-platform='win' version='10.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='10.0'>
+      <aliases enabled='yes' />
+      <column alias='Total Exposures' caption='Factors' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Riskm350&quot;'>
+        <calculation class='tableau' formula='&quot;Riskm350&quot;' />
+        <aliases>
+          <alias key='&quot;Riskm350&quot;' value='Total Exposures' />
+          <alias key='&quot;Riskm390&quot;' value='Payments' />
+          <alias key='&quot;Riskm422&quot;' value='Cross-Jurisdictional Claims' />
+        </aliases>
+        <members>
+          <member alias='Total Exposures' value='&quot;Riskm350&quot;' />
+          <member alias='Cross-Jurisdictional Claims' value='&quot;Riskm422&quot;' />
+          <member alias='Payments' value='&quot;Riskm390&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='20141231_20150803_FRY15 Snapshot Indicators (1).csv (Multiple Connections)' inline='true' name='federated.1kfx3nz0e4jdhn1ddgl6s0kosyoj' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='20141231_20150803_FRY15 Snapshot Indicators (1)' name='textscan.1qjlrju0msyj511b45i1v1ob0cnn'>
+            <connection class='textscan' directory='C:/Users/Vivek/Downloads' filename='20141231_20150803_FRY15 Snapshot Indicators (1).csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='20121231_20130801_FRY15 Snapshot Indicators' name='textscan.1az49k61v9x8uw12u04qu1cbakic'>
+            <connection class='textscan' directory='C:/Users/Vivek/Downloads' filename='20121231_20130801_FRY15 Snapshot Indicators.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='20131231_20140801_FRY15 Snapshot Indicators' name='textscan.0oe8gim1euk89z13ocjpl164ngbo'>
+            <connection class='textscan' directory='C:/Users/Vivek/Downloads' filename='20131231_20140801_FRY15 Snapshot Indicators.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qjlrju0msyj511b45i1v1ob0cnn' name='20141231_20150803_FRY15 Snapshot Indicators (1).csv' table='[20141231_20150803_FRY15 Snapshot Indicators (1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='NAME' ordinal='0' />
+            <column datatype='date' name='DT' ordinal='1' />
+            <column datatype='integer' name='ID_RSSD' ordinal='2' />
+            <column datatype='integer' name='RISKM350' ordinal='3' />
+            <column datatype='integer' name='RISKM362' ordinal='4' />
+            <column datatype='integer' name='RISKM370' ordinal='5' />
+            <column datatype='integer' name='RISKM376' ordinal='6' />
+            <column datatype='integer' name='RISKM390' ordinal='7' />
+            <column datatype='integer' name='RISKM405' ordinal='8' />
+            <column datatype='integer' name='RISKM408' ordinal='9' />
+            <column datatype='integer' name='RISKM411' ordinal='10' />
+            <column datatype='integer' name='RISKN255' ordinal='11' />
+            <column datatype='integer' name='RISKG506' ordinal='12' />
+            <column datatype='integer' name='RISKM422' ordinal='13' />
+            <column datatype='integer' name='RISKM426' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DT</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DT]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>DT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_RSSD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_RSSD]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>ID_RSSD</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM350</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM350]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM350</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM362</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM362]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM362</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM370</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM370]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM370</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM376</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM376]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM376</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM390</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM390]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM390</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM405</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM405]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM405</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM408</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM408]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM408</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM411</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM411]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM411</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKN255</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKN255]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKN255</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKG506</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKG506]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKG506</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM422</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM422]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM422</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM426</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RISKM426]</local-name>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias>RISKM426</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[20141231_20150803_FRY15 Snapshot Indicators (1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date' datatype='date' name='[DT]' role='dimension' type='ordinal' />
+      <column caption='ID Number' datatype='integer' name='[ID_RSSD]' role='dimension' type='ordinal' />
+      <column caption='Institution Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='RISKM506: Level 3 Assets' datatype='integer' name='[RISKG506]' role='measure' type='quantitative' />
+      <column caption='RISKM350: Total Exposures' datatype='integer' name='[RISKM350]' role='measure' type='quantitative' />
+      <column caption='RISK362: Intra-Financial System Assets' datatype='integer' name='[RISKM362]' role='measure' type='quantitative' />
+      <column caption='RISKM370: Intra-Financial System Liabilities' datatype='integer' name='[RISKM370]' role='measure' type='quantitative' />
+      <column caption='RISKM376: Securities Outstanding' datatype='integer' name='[RISKM376]' role='measure' type='quantitative' />
+      <column caption='RISKM390: Payments' datatype='integer' name='[RISKM390]' role='measure' type='quantitative' />
+      <column caption='RISKM405: Assets Under Custody' datatype='integer' name='[RISKM405]' role='measure' type='quantitative' />
+      <column caption='RISKM408: Underwriting' datatype='integer' name='[RISKM408]' role='measure' type='quantitative' />
+      <column caption='RISKM411: OTC Derivatives' datatype='integer' name='[RISKM411]' role='measure' type='quantitative' />
+      <column caption='RISKM422: Cross-Jurisdictional Claims' datatype='integer' name='[RISKM422]' role='measure' type='quantitative' />
+      <column caption='RISKM426: Cross-Jurisdictional Liabilities' datatype='integer' name='[RISKM426]' role='measure' type='quantitative' />
+      <column caption='RISKN255: Trading and AFS Securities' datatype='integer' name='[RISKN255]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.314815' measure-ordering='alphabetic' measure-percentage='0.685185' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='20131231_20140801_FRY15 Snapshot Indicators' inline='true' name='federated.0ppq4ly0waakex1fsg06e0nv47m2' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='20131231_20140801_FRY15 Snapshot Indicators' name='textscan.1redf260m6d9en1d4kaj1193wj7u'>
+            <connection class='textscan' directory='C:/Users/Vivek/Downloads' filename='20131231_20140801_FRY15 Snapshot Indicators.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.330745' measure-ordering='alphabetic' measure-percentage='0.332298' parameter-percentage='0.336957' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='20121231_20130801_FRY15 Snapshot Indicators (1)' inline='true' name='federated.1v3b642133iu4g19k2tsq1j75euo' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='20121231_20130801_FRY15 Snapshot Indicators (1)' name='textscan.1n4l3wv1nj4z1z11zo90x19385xl'>
+            <connection class='textscan' directory='C:/Users/Vivek/Desktop/ADS/Assignments/ADS-Course/Assignment 1/part 3' filename='20121231_20130801_FRY15 Snapshot Indicators (1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='20121231_20130801_FRY15 Snapshot Indicators (1).csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='NAME' />
+            <column datatype='string' name='DT' />
+            <column datatype='string' name='ID_RSSD' />
+            <column datatype='real' name='RISKM350' />
+            <column datatype='real' name='RISKM362' />
+            <column datatype='real' name='RISKM370' />
+            <column datatype='real' name='RISKM376' />
+            <column datatype='real' name='RISKM390' />
+            <column datatype='real' name='RISKM405' />
+            <column datatype='real' name='RISKM408' />
+            <column datatype='real' name='RISKM411' />
+            <column datatype='string' name='RISKG506' />
+            <column datatype='real' name='RISKM422' />
+            <column datatype='real' name='RISKM426' />
+            <column datatype='integer' name='RISKN255' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1n4l3wv1nj4z1z11zo90x19385xl' name='20121231_20130801_FRY15 Snapshot Indicators (1).csv' table='[20121231_20130801_FRY15 Snapshot Indicators (1)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='NAME' ordinal='0' />
+              <column datatype='string' name='DT' ordinal='1' />
+              <column datatype='string' name='ID_RSSD' ordinal='2' />
+              <column datatype='string' name='RISKM350' ordinal='3' />
+              <column datatype='string' name='RISKM362' ordinal='4' />
+              <column datatype='string' name='RISKM370' ordinal='5' />
+              <column datatype='string' name='RISKM376' ordinal='6' />
+              <column datatype='string' name='RISKM390' ordinal='7' />
+              <column datatype='string' name='RISKM405' ordinal='8' />
+              <column datatype='string' name='RISKM408' ordinal='9' />
+              <column datatype='string' name='RISKM411' ordinal='10' />
+              <column datatype='string' name='RISKG506' ordinal='11' />
+              <column datatype='string' name='RISKM422' ordinal='12' />
+              <column datatype='string' name='RISKM426' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1n4l3wv1nj4z1z11zo90x19385xl' name='20131231_20140801_FRY15 Snapshot Indicators (1).csv' table='[20131231_20140801_FRY15 Snapshot Indicators (1)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='NAME' ordinal='0' />
+              <column datatype='date' name='DT' ordinal='1' />
+              <column datatype='integer' name='ID_RSSD' ordinal='2' />
+              <column datatype='integer' name='RISKM350' ordinal='3' />
+              <column datatype='integer' name='RISKM362' ordinal='4' />
+              <column datatype='integer' name='RISKM370' ordinal='5' />
+              <column datatype='integer' name='RISKM376' ordinal='6' />
+              <column datatype='integer' name='RISKM390' ordinal='7' />
+              <column datatype='integer' name='RISKM405' ordinal='8' />
+              <column datatype='integer' name='RISKM408' ordinal='9' />
+              <column datatype='integer' name='RISKM411' ordinal='10' />
+              <column datatype='integer' name='RISKN255' ordinal='11' />
+              <column datatype='integer' name='RISKG506' ordinal='12' />
+              <column datatype='integer' name='RISKM422' ordinal='13' />
+              <column datatype='integer' name='RISKM426' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1n4l3wv1nj4z1z11zo90x19385xl' name='20141231_20150803_FRY15 Snapshot Indicators (2).csv' table='[20141231_20150803_FRY15 Snapshot Indicators (2)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='NAME' ordinal='0' />
+              <column datatype='date' name='DT' ordinal='1' />
+              <column datatype='integer' name='ID_RSSD' ordinal='2' />
+              <column datatype='integer' name='RISKM350' ordinal='3' />
+              <column datatype='integer' name='RISKM362' ordinal='4' />
+              <column datatype='integer' name='RISKM370' ordinal='5' />
+              <column datatype='integer' name='RISKM376' ordinal='6' />
+              <column datatype='integer' name='RISKM390' ordinal='7' />
+              <column datatype='integer' name='RISKM405' ordinal='8' />
+              <column datatype='integer' name='RISKM408' ordinal='9' />
+              <column datatype='integer' name='RISKM411' ordinal='10' />
+              <column datatype='integer' name='RISKN255' ordinal='11' />
+              <column datatype='integer' name='RISKG506' ordinal='12' />
+              <column datatype='integer' name='RISKM422' ordinal='13' />
+              <column datatype='integer' name='RISKM426' ordinal='14' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DT]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>DT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_RSSD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID_RSSD]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>ID_RSSD</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM350</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM350]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM350</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM362</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM362]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM362</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM370</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM370]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM370</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM376</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM376]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM376</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM390</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM390]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM390</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM405</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM405]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM405</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM408</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM408]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM408</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM411</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM411]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM411</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKG506</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RISKG506]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKG506</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM422</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM422]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM422</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKM426</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RISKM426]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKM426</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RISKN255</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[RISKN255]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>RISKN255</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[20121231_20130801_FRY15 Snapshot Indicators (1).csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='integer' datatype-customized='true' name='[Calculation_1246934147153850369]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='INT(LEFT([DT],4))' />
+      </column>
+      <column aggregation='Sum' caption='Calculation1' datatype='real' name='[Calculation_822469950623772672]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;Riskm350&quot; THEN [RISKM350]&#13;&#10;WHEN &quot;Riskm422&quot; THEN [RISKM422]&#13;&#10;WHEN &quot;Riskm390&quot; then [RISKM390]&#13;&#10;END' />
+      </column>
+      <column datatype='string' datatype-customized='true' default-format='*yyyy &quot;Q&quot;q' name='[DT]' role='dimension' type='nominal' />
+      <column caption='Id Rssd' datatype='string' name='[ID_RSSD]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='CountD' caption='Riskg506' datatype='real' datatype-customized='true' name='[RISKG506]' role='measure' type='quantitative' />
+      <column caption='Riskm350' datatype='real' default-format='C1033%' name='[RISKM350]' role='measure' type='quantitative' />
+      <column caption='Riskm362' datatype='real' name='[RISKM362]' role='measure' type='quantitative' />
+      <column caption='Riskm370' datatype='real' name='[RISKM370]' role='measure' type='quantitative' />
+      <column caption='Riskm376' datatype='real' name='[RISKM376]' role='measure' type='quantitative' />
+      <column caption='Riskm390' datatype='real' name='[RISKM390]' role='measure' type='quantitative' />
+      <column caption='Riskm405' datatype='real' name='[RISKM405]' role='measure' type='quantitative' />
+      <column caption='Riskm408' datatype='real' name='[RISKM408]' role='measure' type='quantitative' />
+      <column caption='Riskm411' datatype='real' name='[RISKM411]' role='measure' type='quantitative' />
+      <column caption='Riskm422' datatype='real' name='[RISKM422]' role='measure' type='quantitative' />
+      <column caption='Riskm426' datatype='real' name='[RISKM426]' role='dimension' type='ordinal' />
+      <column-instance column='[Calculation_1246934147153850369]' derivation='None' name='[none:Calculation_1246934147153850369:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[DT]' derivation='None' name='[none:DT:nk]' pivot='key' type='nominal' />
+      <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:\Users\Vivek\Documents\My Tableau Repository\Datasources\20121231_20130801_FRY15 Snapshot Indicators (1).tde' schema='Extract' tablename='Extract' update-time='10/14/2016 12:29:07 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='77' timestamp-start='2016-10-14 00:29:07.046' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>DT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DT</remote-alias>
+              <ordinal>0</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;--&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;20141231&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>77</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ID_RSSD</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ID_RSSD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID_RSSD</remote-alias>
+              <ordinal>1</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;-------&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;3981856&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>77</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAME</remote-alias>
+              <ordinal>2</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;----&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;ZIONS BANCORPORATION&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>77</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>77.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>77</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>77.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKG506</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKG506]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKG506</remote-alias>
+              <ordinal>4</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>873089568.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>11798507.675675675</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>99148000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>20236898.377339039</statistic>
+                <statistic aggregation='StdevP' datatype='real'>20099697.484356731</statistic>
+                <statistic aggregation='Var' datatype='real'>409532055934747.5</statistic>
+                <statistic aggregation='VarP' datatype='real'>403997838962656.31</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>40196994052836928.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM350</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM350]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM350</remote-alias>
+              <ordinal>5</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>53170855940.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>718525080.27027023</statistic>
+                <statistic aggregation='Min' datatype='real'>52700800.0</statistic>
+                <statistic aggregation='Max' datatype='real'>3743113000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>998547932.54935157</statistic>
+                <statistic aggregation='StdevP' datatype='real'>991778037.99946237</statistic>
+                <statistic aggregation='Var' datatype='real'>9.9709797359858445e+17</statistic>
+                <statistic aggregation='VarP' datatype='real'>9.836236766580631e+17</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1.1099274560502414e+20</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM362</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM362]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM362</remote-alias>
+              <ordinal>6</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>6959304799.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>94044659.445945948</statistic>
+                <statistic aggregation='Min' datatype='real'>889007.0</statistic>
+                <statistic aggregation='Max' datatype='real'>535021798.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>154971991.68364581</statistic>
+                <statistic aggregation='StdevP' datatype='real'>153921321.99851006</statistic>
+                <statistic aggregation='Var' datatype='real'>24016318206395988.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>23691773365769016.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>2.4076766788693996e+18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM370</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM370]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM370</remote-alias>
+              <ordinal>7</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>6814887744.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>92093077.621621624</statistic>
+                <statistic aggregation='Min' datatype='real'>233917.0</statistic>
+                <statistic aggregation='Max' datatype='real'>570830000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>150650586.00323427</statistic>
+                <statistic aggregation='StdevP' datatype='real'>149629214.32153934</statistic>
+                <statistic aggregation='Var' datatype='real'>22695599063117888.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>22388901778481156.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>2.2843827175984353e+18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM376</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM376]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM376</remote-alias>
+              <ordinal>8</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>10685881419.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>144403802.95945945</statistic>
+                <statistic aggregation='Min' datatype='real'>158500.0</statistic>
+                <statistic aggregation='Max' datatype='real'>641607000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>191208337.23184764</statistic>
+                <statistic aggregation='StdevP' datatype='real'>189911994.57475114</statistic>
+                <statistic aggregation='Var' datatype='real'>36560628226967976.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>36066565683360304.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4.2120077754460877e+18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM390</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM390]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM390</remote-alias>
+              <ordinal>9</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>3128787739531.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>42280915399.067566</statistic>
+                <statistic aggregation='Min' datatype='real'>24074151.0</statistic>
+                <statistic aggregation='Max' datatype='real'>332286147000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>85089756700.721985</statistic>
+                <statistic aggregation='StdevP' datatype='real'>84512870342.679123</statistic>
+                <statistic aggregation='Var' datatype='real'>7.2402666953880612e+21</statistic>
+                <statistic aggregation='VarP' datatype='real'>7.1424252535584923e+21</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>6.6082747848007844e+23</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM405</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM405]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM405</remote-alias>
+              <ordinal>10</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>252369979903.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>3410405133.8243241</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>24632807000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>7089500048.9187393</statistic>
+                <statistic aggregation='StdevP' datatype='real'>7041435087.6102924</statistic>
+                <statistic aggregation='Var' datatype='real'>5.026101094361881e+19</statistic>
+                <statistic aggregation='VarP' datatype='real'>4.9581808093029368e+19</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4.5297376739685061e+21</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM408</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM408]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM408</remote-alias>
+              <ordinal>11</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>6569242004.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>88773540.594594598</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>518348000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>152243733.35597444</statistic>
+                <statistic aggregation='StdevP' datatype='real'>151211560.55073911</statistic>
+                <statistic aggregation='Var' datatype='real'>23178154346165040.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>22864936044189836.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>2.2751801389878579e+18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM411</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM411]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM411</remote-alias>
+              <ordinal>12</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>832217293786.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>11246179645.756756</statistic>
+                <statistic aggregation='Min' datatype='real'>3048640.0</statistic>
+                <statistic aggregation='Max' datatype='real'>68003662000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>21727229217.345478</statistic>
+                <statistic aggregation='StdevP' datatype='real'>21579924269.963364</statistic>
+                <statistic aggregation='Var' datatype='real'>4.7207248946307098e+20</statistic>
+                <statistic aggregation='VarP' datatype='real'>4.6569313149735377e+20</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4.3820556921027059e+22</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM422</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM422]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM422</remote-alias>
+              <ordinal>13</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>9143295999.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>123558054.04054055</statistic>
+                <statistic aggregation='Min' datatype='real'>86000.0</statistic>
+                <statistic aggregation='Max' datatype='real'>893550000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>231721352.55315843</statistic>
+                <statistic aggregation='StdevP' datatype='real'>230150342.21844417</statistic>
+                <statistic aggregation='Var' datatype='real'>53694785229065144.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>52969180023266960.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5.0494471828748554e+18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKM426</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RISKM426]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKM426</remote-alias>
+              <ordinal>14</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>8552667132.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>115576582.86486487</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>794157000.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>208014328.000671</statistic>
+                <statistic aggregation='StdevP' datatype='real'>206604045.10935771</statistic>
+                <statistic aggregation='Var' datatype='real'>43269960653570736.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>42685231455549512.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>74</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4.1471951692078679e+18</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RISKN255</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[RISKN255]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RISKN255</remote-alias>
+              <ordinal>15</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>3221061309.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>48803959.227272727</statistic>
+                <statistic aggregation='Min' datatype='integer'>900</statistic>
+                <statistic aggregation='Max' datatype='integer'>446323000</statistic>
+                <statistic aggregation='Stdev' datatype='real'>92713924.009299248</statistic>
+                <statistic aggregation='StdevP' datatype='real'>92008864.925181344</statistic>
+                <statistic aggregation='Var' datatype='real'>8595871705202117.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>8465631224820267.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>66</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>7.1593220563111936e+17</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>16</ordinal>
+              <family>20121231_20130801_FRY15 Snapshot Indicators (1).csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;20121231_20130801_FRY15 Snapshot Indicators (1).csv&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;20141231_20150803_FRY15 Snapshot Indicators (2).csv&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>77</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;20131231_20140801_FRY15 Snapshot Indicators (1).csv&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.322981' measure-ordering='alphabetic' measure-percentage='0.583851' parameter-percentage='0.0931677' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:DT:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;20121231&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;--&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;20141231&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;20131231&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:NAME:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CAPITAL ONE FINANCIAL CORPORATION&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SUNTRUST BANKS, INC.                                                                                                    &quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ALLY FINANCIAL INC.&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&amp;T BANK CORPORATION&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BMO FINANCIAL CORP.&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;PNC FINANCIAL SERVICES GROUP, INC., THE                                                                                 &quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;BANK OF NEW YORK MELLON CORPORATION, THE                                                                                &quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;RBS CITIZENS FINANCIAL GROUP, INC.                                                                                      &quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;ZIONS BANCORPORATION&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CITIGROUP INC.&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TD BANK US HOLDING COMPANY&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BB&amp;T CORPORATION&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;REGIONS FINANCIAL CORPORATION&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;GOLDMAN SACHS GROUP, INC., THE                                                                                          &quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;JPMORGAN CHASE &amp; CO.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MORGAN STANLEY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DEUTSCHE BANK TRUST CORPORATION&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BBVA COMPASS BANCSHARES, INC.                                                                                           &quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SANTANDER HOLDINGS USA, INC.                                                                                            &quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;HSBC NORTH AMERICA HOLDINGS INC.&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOVER FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;HUNTINGTON BANCSHARES INCORPORATED&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;KEYCORP&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BANK OF AMERICA CORPORATION&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;U.S. BANCORP&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;CITIZENS FINANCIAL GROUP, INC.                                                                                          &quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;STATE STREET CORPORATION&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AMERICAN EXPRESS COMPANY&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MUFG AMERICAS HOLDINGS CORPORATION&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;----&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;COMERICA INCORPORATED&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;UNIONBANCAL CORPORATION&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;WELLS FARGO &amp; COMPANY&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;FIFTH THIRD BANCORP&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BANCWEST CORPORATION&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NORTHERN TRUST CORPORATION&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1246934147153850369:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2013</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='NAME' />
+        <field-sort-custom-order field='DT' />
+        <field-sort-custom-order field='Calculation_1246934147153850369' />
+        <field-sort-custom-order field='ID_RSSD' />
+        <field-sort-custom-order field='RISKM350' />
+        <field-sort-custom-order field='RISKM362' />
+        <field-sort-custom-order field='RISKM370' />
+        <field-sort-custom-order field='RISKM376' />
+        <field-sort-custom-order field='RISKM390' />
+        <field-sort-custom-order field='RISKM405' />
+        <field-sort-custom-order field='RISKM408' />
+        <field-sort-custom-order field='RISKM411' />
+        <field-sort-custom-order field='RISKG506' />
+        <field-sort-custom-order field='RISKM422' />
+        <field-sort-custom-order field='RISKM426' />
+        <field-sort-custom-order field='RISKN255' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Calculation_822469950623772672' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column alias='Total Exposures' caption='Factors' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Riskm350&quot;'>
+          <calculation class='tableau' formula='&quot;Riskm350&quot;' />
+          <aliases>
+            <alias key='&quot;Riskm350&quot;' value='Total Exposures' />
+            <alias key='&quot;Riskm390&quot;' value='Payments' />
+            <alias key='&quot;Riskm422&quot;' value='Cross-Jurisdictional Claims' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-relationship source='federated.1kfx3nz0e4jdhn1ddgl6s0kosyoj' target='federated.0ppq4ly0waakex1fsg06e0nv47m2'>
+      <column-mapping />
+    </datasource-relationship>
+  </datasource-relationships>
+  <shared-views>
+    <shared-view name='federated.1v3b642133iu4g19k2tsq1j75euo'>
+      <datasources>
+        <datasource caption='20121231_20130801_FRY15 Snapshot Indicators (1)' name='federated.1v3b642133iu4g19k2tsq1j75euo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1v3b642133iu4g19k2tsq1j75euo'>
+        <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+        <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;BANK OF AMERICA CORPORATION&quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;BANK OF NEW YORK MELLON CORPORATION, THE                                                                                &quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;CITIGROUP INC.&quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;CITIZENS FINANCIAL GROUP, INC.                                                                                          &quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;GOLDMAN SACHS GROUP, INC., THE                                                                                          &quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;JPMORGAN CHASE &amp; CO.&quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;MORGAN STANLEY&quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;STATE STREET CORPORATION&quot;' />
+          <groupfilter function='member' level='[none:NAME:nk]' member='&quot;WELLS FARGO &amp; COMPANY&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Intra-Financial System Assets' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Intra-Financial System Assets'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='12'>Intra-Financial System Assets&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20121231_20130801_FRY15 Snapshot Indicators (1)' name='federated.1v3b642133iu4g19k2tsq1j75euo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v3b642133iu4g19k2tsq1j75euo'>
+            <column caption='Year' datatype='integer' datatype-customized='true' name='[Calculation_1246934147153850369]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='INT(LEFT([DT],4))' />
+            </column>
+            <column datatype='string' datatype-customized='true' default-format='*yyyy &quot;Q&quot;q' name='[DT]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+            <column caption='Riskm362' datatype='real' name='[RISKM362]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1246934147153850369]' derivation='None' name='[none:Calculation_1246934147153850369:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RISKM362]' derivation='Sum' name='[sum:RISKM362:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='text-orientation' data-class='subtotal' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' value='0' />
+            <format attr='wrap' data-class='subtotal' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' value='0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:RISKM362:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:RISKM362:qk]' />
+              <color column='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:RISKM362:qk]' />
+              <text column='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:Calculation_1246934147153850369:ok]' />
+              <text column='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Risk 422'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='12'>&lt;</run>
+            <run fontcolor='#000000' fontsize='12'>[Parameters].[Parameter 1]</run>
+            <run fontcolor='#000000' fontsize='12'>&gt;</run>
+            <run fontcolor='#000000' fontsize='12'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20121231_20130801_FRY15 Snapshot Indicators (1)' name='federated.1v3b642133iu4g19k2tsq1j75euo' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Total Exposures' caption='Factors' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Riskm350&quot;'>
+              <calculation class='tableau' formula='&quot;Riskm350&quot;' />
+              <aliases>
+                <alias key='&quot;Riskm350&quot;' value='Total Exposures' />
+                <alias key='&quot;Riskm390&quot;' value='Payments' />
+                <alias key='&quot;Riskm422&quot;' value='Cross-Jurisdictional Claims' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1v3b642133iu4g19k2tsq1j75euo'>
+            <column caption='Year' datatype='integer' datatype-customized='true' name='[Calculation_1246934147153850369]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='INT(LEFT([DT],4))' />
+            </column>
+            <column aggregation='Sum' caption='Calculation1' datatype='real' name='[Calculation_822469950623772672]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;Riskm350&quot; THEN [RISKM350]&#13;&#10;WHEN &quot;Riskm422&quot; THEN [RISKM422]&#13;&#10;WHEN &quot;Riskm390&quot; then [RISKM390]&#13;&#10;END' />
+            </column>
+            <column datatype='string' datatype-customized='true' default-format='*yyyy &quot;Q&quot;q' name='[DT]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+            <column caption='Riskm350' datatype='real' default-format='C1033%' name='[RISKM350]' role='measure' type='quantitative' />
+            <column caption='Riskm390' datatype='real' name='[RISKM390]' role='measure' type='quantitative' />
+            <column caption='Riskm422' datatype='real' name='[RISKM422]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1246934147153850369]' derivation='None' name='[none:Calculation_1246934147153850369:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_822469950623772672]' derivation='None' name='[none:Calculation_822469950623772672:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_822469950623772672]' derivation='Sum' name='[sum:Calculation_822469950623772672:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' direction='DESC' using='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' />
+          <filter class='quantitative' column='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' included-values='all' />
+          <slices>
+            <column>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]</column>
+            <column>[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' scope='rows' value='Indicator:' />
+            <format attr='subtitle' class='0' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:Calculation_1246934147153850369:ok]' value='286' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' />
+              <size column='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:Calculation_822469950623772672:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]</rows>
+        <cols>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:Calculation_1246934147153850369:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='20121231_20130801_FRY15 Snapshot Indicators (1)' name='federated.1v3b642133iu4g19k2tsq1j75euo' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1v3b642133iu4g19k2tsq1j75euo'>
+        <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+        <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='5' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' type='layout-basic' w='84062' x='0' y='0'>
+              <zone h='63415' id='8' name='Risk 422' w='84062' x='0' y='36585' />
+              <zone h='36585' id='11' name='Intra-Financial System Assets' w='84062' x='0' y='0' />
+            </zone>
+            <zone fixed-size='266' h='100000' id='4' is-fixed='true' param='vert' type='layout-flow' w='15938' x='84062' y='0'>
+              <zone h='3950' id='9' mode='radiolist' name='Risk 422' param='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:DT:ok]' type='filter' w='15938' x='84062' y='0' />
+              <zone h='84783' id='12' mode='radiolist' name='Intra-Financial System Assets' param='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' type='filter' w='15938' x='84062' y='3950' />
+              <zone h='11267' id='13' name='Intra-Financial System Assets' pane-specification-id='0' param='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:DT:nk]' type='color' w='15938' x='84062' y='88733' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='89'>
+    <window class='worksheet' name='Risk 422'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card param='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' type='filter' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:Calculation_822469950623772672:ok]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kfx3nz0e4jdhn1ddgl6s0kosyoj].[none:NAME:nk]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:Calculation_822469950623772672:ok]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:DT:ok]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:DT:qk]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:RISKM350:ok]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:Calculation_822469950623772672:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Intra-Financial System Assets' />
+        <viewpoint name='Risk 422'>
+          <highlight field='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:DT:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+    </window>
+    <window class='worksheet' maximized='true' name='Intra-Financial System Assets'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:Calculation_1246934147153850369:ok]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:DT:ok]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[none:NAME:nk]</field>
+            <field>[federated.1v3b642133iu4g19k2tsq1j75euo].[sum:RISKM362:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Intra-Financial System Assets' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Risk 422' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
